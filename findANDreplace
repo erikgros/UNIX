@@ -1,0 +1,2 @@
+#Find 'searchtext' in all files of current directory and replace 'matchtext' with 'replacetext':
+ grep -r -l 'searchtext' . | sort | uniq | xargs perl -e "s/matchtext/replacetext/" -pi

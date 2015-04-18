@@ -1,0 +1,3 @@
+#The following command removes all .png files in all subdirectories:
+
+find . -name *.png -exec rm -rf {} \;

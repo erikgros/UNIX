@@ -1,0 +1,37 @@
+## General stuff
+
+# set PATH:
+export PATH=/usr/local/bin:$PATH
+# or to run executables without './' use:
+export PATH=$PATH:.
+
+# ls directories in different colors:
+alias ls="ls -G"
+
+## Customiying prompt
+
+#    '/A' is current time
+#    'u' is user
+#    colors: 31 is red, 32 is green, 33 is yellow, 34 is blue...
+PS1='\[\e[0;32m\]\u@pcXXX\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\A\[\e[m\] '
+
+## Shortcuts
+
+alias go3d="cd ~/projects/cpp/femSIM3d/"
+
+# 'lsof' lists all open files:
+alias isLogOpen="lsof -w | grep LOGFILE"
+
+# like scp but without copying existing files:
+alias syncronize="rsync -a --ignore-existing"
+
+## Variables needed for femSIM
+
+export PETSC_ARCH=arch-darwin-cxx-debug
+export PETSC_DIR=$HOME/CODE/Programs/petsc
+export TETGEN_DIR=$HOME/CODE/Programs/tetgen/1.4.3
+export TRIANGLE_DIR=$HOME/CODE/Programs/triangle
+export DATA_DIR=$HOME/CODE/projects/db
+export FEMLIB_DIR=$HOME/CODE/projects/lib
+export FEM3D_DIR=$HOME/CODE/projects/MasterVersions/femSIM3d
+export FEM2D_DIR=$HOME/CODE/projects/MasterVersions/femSIM2d

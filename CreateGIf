@@ -1,0 +1,3 @@
+#The following command creates movieName.gif using all .png files in the current directory:
+
+convert -geometry 100%x100% -loop 0 -delay 10 -verbose *.png movieName.gif
