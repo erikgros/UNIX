@@ -1,0 +1,2 @@
+# to delete every $N line in file and save the results in newFile type:
+awk 'NR % $N != 0' file > newFile
