@@ -1,0 +1,7 @@
+# to mount a NAS type:
+mount -t cifs -o user=egros -o sec=ntlm //ltcmnas3.epfl.ch/erik /mnt/nas3/
+# to unmount it type:
+umount /mnt/nas3
+
+# to mount a ssh session e.g. "erik@pcX" as a ssh file-system type:
+sshfs -o idmap=user -o follow_symlinks erik@pcX:/home/erik ~/pcX
