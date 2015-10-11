@@ -1,0 +1,5 @@
+#Deleting all files with a specific extension (e.g. png) in all subdirectories:
+find . -name *.png -exec rm -rf {} \;
+
+#Deleting every $N line in file and saving the results in newFile:
+awk 'NR % $N != 0' file > newFile

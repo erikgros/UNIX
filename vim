@@ -1,5 +1,4 @@
 #BASICS
-
 :w
 save document
 :q
@@ -34,24 +33,18 @@ run Makefile script
 go to line 32
 
 #MOVING AROUND
-
 gg
 jump to beginning of file
-
 G
 jump to end of file
-
 XG
 jump to line X of file
-
 0
 jump to beginning of line
-
 $
 jump to end of line
 
 #SUBSTITUTION
-
 i
 insert text
 o
@@ -72,7 +65,6 @@ x
 delete character under cursor
 
 #REGISTERS
-
 q[a-z;0-9]
 start record to [a-z;0-9]
 set of command
@@ -87,7 +79,6 @@ repeat execution
 repeat execution 5 times
 
 #DELETING
-
 :1,.d
 delete all the lines from the beginning of the file to your current cursor position
 :.,$d

@@ -1,1 +1,0 @@
-find dir/ -type f -print | grep 'searchpattern'
