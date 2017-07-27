@@ -1,0 +1,18 @@
+# plotting all files in current directory
+set autoscale              # scale axes automatically
+unset log                  # remove any log-scaling
+unset label                # remove any previous labels
+unset grid
+#set title "TITLE"
+set terminal pdf
+set output "all.pdf"
+#set xlabel "x [mm]"
+#set ylabel "r(x) [mm]"
+set label
+set format y "%1.2f"
+set size ratio -1
+# format legend:
+set key top right
+
+list=system('ls -1B *.dat')
+plot for [file in list] file w l u 1:2 t file
